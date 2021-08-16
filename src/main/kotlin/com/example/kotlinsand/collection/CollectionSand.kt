@@ -14,6 +14,7 @@ class CollectionSand {
         val x = mutableMapOf<String, Int>()  //=> MutableMap<String, Int>
 
         // Kotlin が定義しているシングルトンインスタンス（EmptyList など）を返すので、空のコレクションインスタンスをいくつも生成するのを避ける
+        // この場合、編集不可(要素追加不可)になる
         val x = emptyList<Int>()         //=> List<Int>
         val x = emptySet<Int>()          //=> Set<Int>
         val x = emptyMap<String, Int>()  //=> Map<String, Int>
